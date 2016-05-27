@@ -30,7 +30,7 @@ my $app = app(title => "Hello GTK!");
 
 $app.set-content(
     vbox(
-        my $first-button = button(label => "Hello World!"),
+        my $first-button  = button(label => "Hello World!"),
         my $second-button = button(label => "Goodbye!")
     )
 );

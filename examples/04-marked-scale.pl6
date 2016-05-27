@@ -15,12 +15,12 @@ $app.set-content(
     vbox( 
         hbox(
             vbox( 
-                my $normal-label = label(:text("Normal label: %texts<blue>" ) ),
-                my $marked-label = label(:text("Label with markup: %texts<blue>") ),
-                my $bR = check-button(:label('Make Red')),
-                my $bB = toggle-button(:label('Make Blue')),
-                my $label-for-vertical = markup-label(:text('Vertical scale value is:')),
-	        my $label-for-horizontal = markup-label(:text('Horizontal scale value is:')),
+                my $normal-label          = label(:text("Normal label: %texts<blue>" ) ),
+                my $marked-label          = label(:text("Label with markup: %texts<blue>") ),
+                my $bR                    = check-button(:label('Make Red')),
+                my $bB                    = toggle-button(:label('Make Blue')),
+                my $label-for-vertical    = markup-label(:text('Vertical scale value is:')),
+                my $label-for-horizontal  = markup-label(:text('Horizontal scale value is:')),
             ),
             my $scale-vertical = scale(:orientation<vertical>, :max(31), :min(2.4), :step(0.3), :value(21) ),
         ),

@@ -14,15 +14,15 @@ $status.tooltip-text = "I am a status bar";
 my $root_ctx = $status.get-context-id("Root");
 $status.push-status($root_ctx, "Running");
 
-my $button1 = button(label => "button one");
-my $button1_ctx = $status.get-context-id("Button One");
+my $button1           = button(label => "button one");
+my $button1_ctx       = $status.get-context-id("Button One");
 $button1.tooltip-text = "I'm a button";
 
-my $button2 = button(label => "button two");
-my $button2_ctx = $status.get-context-id("Button One");
+my $button2           = button(label => "button two");
+my $button2_ctx       = $status.get-context-id("Button One");
 $button2.tooltip-text = "I'm another button";
 
-my $progress = progress-bar;
+my $progress           = progress-bar;
 $progress.tooltip-text = "And this is a progress bar";
 
 $button1.clicked.tap({
