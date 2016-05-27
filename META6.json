@@ -1,0 +1,12 @@
+{
+    "name"        : "GTK::Simple",
+    "version"     : "0.0.1",
+    "perl"        : "6.c",
+    "description" : "A simpler API for GTK::Simple",
+    "depends"     : [ "GTK::Simple" ],
+    "provides"    : {
+        "GTK::Simpler"   : "lib/GTK/Simpler.pm6"
+    },
+    "repo-type"  : "git",
+    "source-url" : "git://github.com/perl6/gtk-simple.git"
+}
