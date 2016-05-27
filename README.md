@@ -54,25 +54,7 @@ For more examples, please see the [examples](examples) folder.
 
 ## Prerequisites
 
-This module requires the GTK3 library to be installed. Please follow the
-instructions below based on your platform:
-
-### Debian Linux
-
-```
-sudo apt-get install libgtk-3-dev
-```
-
-### Mac OS X
-
-```
-brew update
-brew install gtk+3
-```
-
-## Windows
-
-Precompiled GTK3 DLLs are installed automatically with module installation.
+Please check [GTK::Simple prerequisites](https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites) section for more information.
 
 ## Installation
 
