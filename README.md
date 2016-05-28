@@ -53,6 +53,10 @@ $app.run;
 
 For more examples, please see the [examples](examples) folder.
 
+## Documentation
+
+Please see the [GTK::Simpler](doc/GTK-Simpler.md) generated documentation.
+
 ## Installation
 
 Please check [GTK::Simple prerequisites](
