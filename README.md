@@ -2,8 +2,9 @@
 
 This module provides a simpler API for
 [GTK::Simple](https://github.com/perl6/gtk-simple). The idea here is to load
-GTK::Simple widgets lazily at runtime and type less characters. For example instead of
-writing the following:
+GTK::Simple widgets lazily at runtime and type less characters. For example
+instead of writing the following:
+
 ```Perl6
 # This is slow since it will load a lot of GTK::Simple widgets by default
 use GTK::Simple;
@@ -35,7 +36,7 @@ $app.set-content(
     )
 );
 
-$app.border-width = 20;
+$app.border-width        = 20;
 $second-button.sensitive = False;
 
 $first-button.clicked.tap({ 
@@ -52,11 +53,11 @@ $app.run;
 
 For more examples, please see the [examples](examples) folder.
 
-## Prerequisites
-
-Please check [GTK::Simple prerequisites](https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites) section for more information.
-
 ## Installation
+
+Please check [GTK::Simple prerequisites](
+https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites) section
+for more information.
 
 To install it using Panda (a module management tool bundled with Rakudo Star):
 

@@ -136,3 +136,197 @@ sub spinner(|args) is export {
     require GTK::Simple::Spinner;
     return ::('GTK::Simple::Spinner').new(|args);
 }
+
+=begin doc
+
+=head1 NAME
+
+GTK::Simpler - A simpler & more efficient API for GTK::Simple
+
+=head1 SYNOPSIS
+
+=begin code
+use v6;
+use GTK::Simpler;
+
+my $app = app(title => "Hello GTK!");
+
+$app.set-content(
+    vbox(
+        my $first-button  = button(label => "Hello World!"),
+        my $second-button = button(label => "Goodbye!")
+    )
+);
+
+$app.border-width        = 20;
+$second-button.sensitive = False;
+
+$first-button.clicked.tap({
+    .sensitive = False;
+    $second-button.sensitive = True
+});
+
+$second-button.clicked.tap({
+    $app.exit;
+});
+
+$app.run;
+=end code
+
+=head1 DESCRIPTION
+
+This module provides a simpler and more efficient API for
+L<GTK::Simple|https://github.com/perl6/gtk-simple>. The idea here is to load
+GTK::Simple widgets lazily at runtime and type less characters. For example
+instead of writing the following:
+
+=begin code
+    # This is slow since it will load a lot of GTK::Simple widgets by default
+    use GTK::Simple;
+
+    my $app = GTK::Simple::App.new(title => "Hello");
+=end code
+
+you write the more concise shorter form:
+
+=begin code
+# Exports a bunch of subroutines by default
+use GTK::Simpler;
+
+# GTK::Simple::App is loaded and created only here
+my $app = app(title => "Hello");
+=end code
+
+=head1 INSTALLATION
+
+Please check L<GTK::Simple prerequisites|https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites>
+section for more information.
+
+To install it using Panda (a module management tool bundled with Rakudo Star):
+
+=begin code
+$ panda update
+$ panda install GTK::Simpler
+=end code
+
+=head1 ROUTINES
+
+The following routines are exported by default:
+
+=head2 app
+
+Returns a GTK::Simple::App object.
+
+=head2 connection-handler
+
+Returns a GTK::Simple::ConnectionHandler object.
+
+=head2 widget
+
+Returns a GTK::Simple::Widget object.
+
+=head2 container
+
+Returns a GTK::Simple::Container object.
+
+=head2 window
+
+Returns a GTK::Simple::Window object.
+
+=head2 scheduler
+
+Returns a GTK::Simple::Scheduler object.
+
+=head2 box
+
+Returns a GTK::Simple::Box object.
+
+=head2 hbox
+
+Returns a GTK::Simple::HBox object.
+
+=head2 vbox
+
+Returns a GTK::Simple::VBox object.
+
+=head2 grid
+
+Returns a GTK::Simple::Grid object.
+
+=head2 label
+
+Returns a GTK::Simple::Label object.
+
+=head2 markup-label
+
+Returns a GTK::Simple::MarkUpLabel object.
+
+=head2 scale
+
+Returns a GTK::Simple::Scale object.
+
+=head2 entry
+
+Returns a GTK::Simple::Entry object.
+
+=head2 text-view
+
+Returns a GTK::Simple::TextView object.
+
+=head2 button
+
+Returns a GTK::Simple::Button object.
+
+=head2 toggle-button
+
+Returns a GTK::Simple::ToggleButton object.
+
+=head2 check-button
+
+Returns a GTK::Simple::CheckButton object.
+
+=head2 drawing-area
+
+Returns a GTK::Simple::DrawingArea object.
+
+=head2 switch
+
+Returns a GTK::Simple::Switch object.
+
+=head2 status-bar
+
+Returns a GTK::Simple::StatusBar object.
+
+=head2 separator
+
+Returns a GTK::Simple::Separator object.
+
+=head2 progress-bar
+
+Returns a GTK::Simple::ProgressBar object.
+
+=head2 frame
+
+Returns a GTK::Simple::Frame object.
+
+=head2 combo-box-text
+
+Returns a GTK::Simple::ComboBoxText object.
+
+=head2 action-bar
+
+Returns a GTK::Simple::ActionBar object.
+
+=head2 spinner
+
+Returns a GTK::Simple::Spinner object.
+
+=head1 AUTHOR
+
+Ahmad M. Zawawi, L<azawawi|https://github.com/azawawi> on #perl6
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2016 Ahmad M. Zawawi under the MIT License
+
+=end doc

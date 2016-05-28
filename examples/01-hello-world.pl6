@@ -13,7 +13,7 @@ $app.set-content(
     )
 );
 
-$app.border-width = 20;
+$app.border-width        = 20;
 $second-button.sensitive = False;
 
 $first-button.clicked.tap({ 
