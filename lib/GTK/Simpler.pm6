@@ -321,6 +321,10 @@ Returns a GTK::Simple::ActionBar object.
 
 Returns a GTK::Simple::Spinner object.
 
+=head1 SEE ALSO
+
+L<GTK::Simple|https://github.com/perl6/gtk-simple>
+
 =head1 AUTHOR
 
 Ahmad M. Zawawi, L<azawawi|https://github.com/azawawi> on #perl6

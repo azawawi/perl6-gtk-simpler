@@ -1,3 +1,6 @@
+doc
+===
+
 NAME
 ====
 
@@ -199,6 +202,11 @@ spinner
 -------
 
 Returns a GTK::Simple::Spinner object.
+
+SEE ALSO
+========
+
+[GTK::Simple](https://github.com/perl6/gtk-simple)
 
 AUTHOR
 ======
