@@ -1,12 +1,12 @@
 doc
 ===
 
-NAME
+Name
 ====
 
 GTK::Simpler - A simpler & more efficient API for GTK::Simple
 
-SYNOPSIS
+Synopsis
 ========
 
     use v6;
@@ -35,7 +35,7 @@ SYNOPSIS
 
     $app.run;
 
-DESCRIPTION
+Description
 ===========
 
 This module provides a simpler and more efficient API for [GTK::Simple](https://github.com/perl6/gtk-simple). The idea here is to load GTK::Simple widgets lazily at runtime and type less characters. For example instead of writing the following:
@@ -53,7 +53,7 @@ you write the more concise shorter form:
     # GTK::Simple::App is loaded and created only here
     my $app = app(title => "Hello");
 
-INSTALLATION
+Installation
 ============
 
 Please check [GTK::Simple prerequisites](https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites) section for more information.
@@ -63,8 +63,8 @@ To install it using Panda (a module management tool bundled with Rakudo Star):
     $ panda update
     $ panda install GTK::Simpler
 
-ROUTINES
-========
+Subroutines
+===========
 
 The following routines are exported by default:
 
@@ -203,17 +203,17 @@ spinner
 
 Returns a GTK::Simple::Spinner object.
 
-SEE ALSO
+See also
 ========
 
 [GTK::Simple](https://github.com/perl6/gtk-simple)
 
-AUTHOR
+Author
 ======
 
 Ahmad M. Zawawi, [azawawi](https://github.com/azawawi) on #perl6
 
-COPYRIGHT AND LICENSE
+Copyright and license
 =====================
 
 Copyright 2016 Ahmad M. Zawawi under the MIT License

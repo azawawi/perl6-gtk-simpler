@@ -139,11 +139,11 @@ sub spinner(|args) is export {
 
 =begin doc
 
-=head1 NAME
+=head1 Name
 
 GTK::Simpler - A simpler & more efficient API for GTK::Simple
 
-=head1 SYNOPSIS
+=head1 Synopsis
 
 =begin code
 use v6;
@@ -173,7 +173,7 @@ $second-button.clicked.tap({
 $app.run;
 =end code
 
-=head1 DESCRIPTION
+=head1 Description
 
 This module provides a simpler and more efficient API for
 L<GTK::Simple|https://github.com/perl6/gtk-simple>. The idea here is to load
@@ -197,7 +197,7 @@ use GTK::Simpler;
 my $app = app(title => "Hello");
 =end code
 
-=head1 INSTALLATION
+=head1 Installation
 
 Please check L<GTK::Simple prerequisites|https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites>
 section for more information.
@@ -209,7 +209,7 @@ $ panda update
 $ panda install GTK::Simpler
 =end code
 
-=head1 ROUTINES
+=head1 Subroutines
 
 The following routines are exported by default:
 
@@ -321,15 +321,15 @@ Returns a GTK::Simple::ActionBar object.
 
 Returns a GTK::Simple::Spinner object.
 
-=head1 SEE ALSO
+=head1 See also
 
 L<GTK::Simple|https://github.com/perl6/gtk-simple>
 
-=head1 AUTHOR
+=head1 Author
 
 Ahmad M. Zawawi, L<azawawi|https://github.com/azawawi> on #perl6
 
-=head1 COPYRIGHT AND LICENSE
+=head1 Copyright and license
 
 Copyright 2016 Ahmad M. Zawawi under the MIT License
 
