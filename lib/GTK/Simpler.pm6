@@ -177,6 +177,21 @@ sub radio-button(|args) is export {
     return ::('GTK::Simple::RadioButton').new(|args);
 }
 
+sub link-button(|args) is export {
+    require GTK::Simple::LinkButton;
+    return ::('GTK::Simple::LinkButton').new(|args);
+}
+
+sub level-bar(|args) is export {
+    require GTK::Simple::LevelBar;
+    return ::('GTK::Simple::LevelBar').new(|args);
+}
+
+sub scrolled-window(|args) is export {
+    require GTK::Simple::ScrolledWindow;
+    return ::('GTK::Simple::ScrolledWindow').new(|args);
+}
+
 =begin doc
 
 =head1 Name
