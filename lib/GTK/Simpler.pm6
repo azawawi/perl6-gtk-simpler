@@ -172,6 +172,10 @@ sub places-sidebar(|args) is export {
     return ::('GTK::Simple::PlacesSidebar').new(|args);
 }
 
+sub radio-button(|args) is export {
+    require GTK::Simple::RadioButton;
+    return ::('GTK::Simple::RadioButton').new(|args);
+}
 
 =begin doc
 
