@@ -137,6 +137,16 @@ sub spinner(|args) is export {
     return ::('GTK::Simple::Spinner').new(|args);
 }
 
+sub toolbar(|args) is export {
+    require GTK::Simple::Toolbar;
+    return ::('GTK::Simple::Toolbar').new(|args);
+}
+
+sub menu-tool-button(|args) is export {
+    require GTK::Simple::MenuToolButton;
+    return ::('GTK::Simple::MenuToolButton').new(|args);
+}
+
 =begin doc
 
 =head1 Name
@@ -319,6 +329,14 @@ Returns a GTK::Simple::ActionBar object.
 =head2 spinner
 
 Returns a GTK::Simple::Spinner object.
+
+=head2 toolbar
+
+Returns a GTK::Simple::Toolbar object.
+
+=head2 menu-tool-button
+
+Returns a GTK::Simple::MenuToolButton object.
 
 =head1 See also
 
