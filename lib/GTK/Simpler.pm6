@@ -202,11 +202,10 @@ my $app = app(title => "Hello");
 Please check L<GTK::Simple prerequisites|https://github.com/perl6/gtk-simple/blob/master/README.md#prerequisites>
 section for more information.
 
-To install it using Panda (a module management tool bundled with Rakudo Star):
+To install it using zef (a module management tool bundled with Rakudo Star):
 
 =begin code
-$ panda update
-$ panda install GTK::Simpler
+$ zef install GTK::Simpler
 =end code
 
 =head1 Subroutines
