@@ -1,6 +1,6 @@
 {
     "name"        : "GTK::Simpler",
-    "version"     : "0.0.3",
+    "version"     : "0.0.4",
     "perl"        : "6.c",
     "description" : "A simpler and more efficient API for GTK::Simple",
     "depends"     : [ "GTK::Simple" ],
