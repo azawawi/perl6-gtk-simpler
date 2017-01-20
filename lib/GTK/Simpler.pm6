@@ -331,6 +331,6 @@ Ahmad M. Zawawi, L<azawawi|https://github.com/azawawi> on #perl6
 
 =head1 Copyright and license
 
-Copyright 2016 Ahmad M. Zawawi under the MIT License
+Copyright 2016-2017 Ahmad M. Zawawi under the MIT License
 
 =end doc

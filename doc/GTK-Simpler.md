@@ -216,4 +216,4 @@ Ahmad M. Zawawi, [azawawi](https://github.com/azawawi) on #perl6
 Copyright and license
 =====================
 
-Copyright 2016 Ahmad M. Zawawi under the MIT License
+Copyright 2016-2017 Ahmad M. Zawawi under the MIT License
