@@ -147,6 +147,26 @@ sub menu-tool-button(|args) is export {
     return ::('GTK::Simple::MenuToolButton').new(|args);
 }
 
+sub menu-item(|args) is export {
+    require GTK::Simple::MenuItem;
+    return ::('GTK::Simple::MenuItem').new(|args);
+}
+
+sub menu(|args) is export {
+    require GTK::Simple::Menu;
+    return ::('GTK::Simple::Menu').new(|args);
+}
+
+sub menu-bar(|args) is export {
+    require GTK::Simple::MenuBar;
+    return ::('GTK::Simple::MenuBar').new(|args);
+}
+
+sub file-chooser-button(|args) is export {
+    require GTK::Simple::FileChooserButton;
+    return ::('GTK::Simple::FileChooserButton').new(|args);
+}
+
 =begin doc
 
 =head1 Name
