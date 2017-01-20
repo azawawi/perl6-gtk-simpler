@@ -167,6 +167,12 @@ sub file-chooser-button(|args) is export {
     return ::('GTK::Simple::FileChooserButton').new(|args);
 }
 
+sub places-sidebar(|args) is export {
+    require GTK::Simple::PlacesSidebar;
+    return ::('GTK::Simple::PlacesSidebar').new(|args);
+}
+
+
 =begin doc
 
 =head1 Name
